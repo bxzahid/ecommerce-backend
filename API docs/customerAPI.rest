@@ -1,0 +1,35 @@
+###
+# Create customer account
+POST http://localhost:5000/api/customer/create-customer?ref=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDBlNTU2ZjA3NDYwZDQxNDg5YmUyODQiLCJpYXQiOjE1NjEyMjA0NjN9.1LSatvqrPFHLn3gj1WyUrB0jgMO7R1csY6Jndoi5C_U HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "customer2",
+    "lastName": "Hossain",
+    "email": "customer2@gmail.com",
+    "userName":"customer2",
+    "password":"password",
+    "confirmPassword":"password"
+}
+
+###
+# Get all customers only  admins can view it
+GET http://localhost:5000/api/customer/get-all-customers HTTP/1.1
+content-type: application/json
+
+
+
+###
+# Disable a customer account
+GET http://localhost:5000/api/customer/disable-customer/5d0e556f07460d41489be284 HTTP/1.1
+content-type: application/json
+
+
+
+###
+# Enable a customer account 
+GET http://localhost:5000/api/customer/enable-customer/5d0e556f07460d41489be284 HTTP/1.1
+content-type: application/json
+
+
+

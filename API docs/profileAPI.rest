@@ -1,0 +1,22 @@
+###
+#Edit profile
+
+
+PUT http://localhost:5000/api/profile/edit HTTP/1.1
+Content-Type:application/json
+
+{
+   "name":{
+"lastName":"Rahman"
+   },
+   "address":{
+      "city":"Barishal"
+   }
+}
+###
+#get profile
+
+
+GET  http://localhost:5000/api/profile/profile HTTP/1.1
+Content-Type:application/json
+

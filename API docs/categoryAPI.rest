@@ -1,0 +1,50 @@
+####
+# Create root category
+
+
+
+POST http://localhost:5000/api/category/create-category HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Programming"
+}
+####
+
+POST http://localhost:5000/api/category/create-category HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Word press child child child child child",
+    "parent":"5d1ccc709dcb6a3dc49eb363"
+}
+####
+
+GET http://localhost:5000/api/category/all-categories HTTP/1.1
+content-type: application/json
+####
+
+GET http://localhost:5000/api/category/all-root-categories HTTP/1.1
+content-type: application/json
+####
+
+GET http://localhost:5000/api/category/get-category/5d1cc7fed02055229013d021 HTTP/1.1
+content-type: application/json
+
+####
+
+POST  http://localhost:5000/api/category/edit-category/5d1b9aa4b7361627ac98b499 HTTP/1.1
+content-type: application/json
+
+{
+    "title":"new phones",
+    "seo":{
+        "metaDescription":"this is meta description"
+    }
+}
+
+
+####
+
+DELETE  http://localhost:5000/api/category/delete-category/5d1ccba39dcb6a3dc49eb34a HTTP/1.1
+content-type: application/json

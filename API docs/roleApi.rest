@@ -1,0 +1,62 @@
+
+# Create Role
+
+POST http://localhost:5000/api/role/create-role HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Manager"
+}
+###
+# get all roles(Only root admin can view it)
+
+
+GET http://localhost:5000/api/role/get-roles HTTP/1.1
+Content-Type: application/json
+
+###
+# get single role
+
+
+GET http://localhost:5000/api/role/get-role/5d1d02bc9923d1381c836a1f HTTP/1.1
+Content-Type: application/json
+
+
+###
+# Edit role (Only root admin can do it)
+
+
+PUT http://localhost:5000/api/role/edit-role/5d1d02bc9923d1381c836a1f HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Manager"
+}
+###
+# add permission into a role (Only root admin can do it)
+
+
+PUT http://localhost:5000/api/role/modify-permissions/5d1d0760b96d6c40e83a1437 HTTP/1.1
+Content-Type: application/json
+
+{
+    "permissions":[
+        {
+            "description":"Admin can managed customers",
+            "type":"CUSTOMER_MANAGEMENT"
+        },
+        {
+            "description": "Admin can managed categories",
+            "type": "CATEGORY_MANAGEMENT"
+        }
+]
+}
+
+
+###
+# Delete role (Only root admin can do it)
+
+
+DELETE  http://localhost:5000/api/role/delete-role/5d1d02bc9923d1381c836a1f HTTP/1.1
+Content-Type: application/json
+

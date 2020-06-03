@@ -1,0 +1,84 @@
+@baseUrl = http://localhost:5000/api
+
+
+// 
+
+// /crate
+
+
+<!---
+
+baseroute = admin
+
+*admin/createadmin 
+Create root admin if threre aren't any admin
+if root adming already exist then redirect to login page
+
+
+
+*admin/resetPassword 
+reset admin password
+
+*admin/createsubadmin 
+create sub admin
+
+*admin/deletesubadmin 
+delete subadmin sub admin
+
+*admin/changeadminrole 
+change subadmin role
+
+-->
+###
+# Create root admin
+POST http://localhost:5000/api/admin/create-root-admin HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Shifut",
+    "lastName": "Hossain",
+    "email": "mdshsifut@gmail.com",
+    "userName":"mdshifut",
+    "password":"password",
+    "confirmPassword":"password"
+}
+
+###
+# Create sub admin only root admin can create sub admin
+POST http://localhost:5000/api/admin/create-admin HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Monir",
+    "lastName": "Hossain",
+    "email": "monir@gmail.com",
+    "userName":"monir"
+}
+
+###
+# get all sub admin
+GET http://localhost:5000/api/admin/get-all-admins HTTP/1.1
+content-type: application/json
+
+###
+# Change sub admin role only root admin can do this
+PUT http://localhost:5000/api/admin/change-role/5d0f942730527d3b6c511c7f HTTP/1.1
+content-type: application/json
+
+{
+    "role":"5d1d0760b96d6c40e83a1437"
+}
+
+###
+# disable sub admin
+GET http://localhost:5000/api/admin/disable-admin/5d0f942730527d3b6c511c7f HTTP/1.1
+content-type: application/json
+
+###
+# Enable sub admin
+GET http://localhost:5000/api/admin/enable-admin/5d0f942730527d3b6c511c7f HTTP/1.1
+content-type: application/json
+
+
+
+
