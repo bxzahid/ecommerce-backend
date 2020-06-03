@@ -19,7 +19,7 @@
     "generate-password": "^1.4.2",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^2.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mongo-dot-notation-tool": "^1.0.1",
     "mongoose": "^5.5.14",
     "morgan": "^1.9.1",
