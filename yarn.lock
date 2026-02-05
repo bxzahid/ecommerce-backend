@@ -3276,10 +3276,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-validator@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-11.0.0.tgz#fb10128bfb1fd14ce4ed36b79fc94289eae70667"
-  integrity sha512-+wnGLYqaKV2++nUv60uGzUJyJQwYVOin6pn1tgEiFCeCQO60yeu3Og9/yPccbBX574kxIcEJicogkzx6s6eyag==
+validator@^13.15.22:
+  version "13.15.22"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.15.22.tgz#5f847cf4a799107e5716fc87e5cf2a337a71eb14"
+  integrity sha512-uT/YQjiyLJP7HSrv/dPZqK9L28xf8hsNca01HSz1dfmI0DgMfjopp1rO/z13NeGF1tVystF0Ejx3y4rUKPw+bQ==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"
