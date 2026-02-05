@@ -21,7 +21,7 @@
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.23",
     "mongo-dot-notation-tool": "^1.0.1",
-    "mongoose": "^8.8.3",
+    "mongoose": "^8.9.5",
     "morgan": "^1.9.1",
     "nodemailer": "^7.0.11",
     "passport": "^0.4.0",
